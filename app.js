@@ -27,7 +27,8 @@ function play() {
         console.log("correct-input");
         game(comSel, usrSel);
     }else {
-        alert("wrong input");
+        alert("wrong input: try again");
+        play();
     }
 }
 
