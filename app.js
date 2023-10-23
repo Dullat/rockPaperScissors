@@ -69,6 +69,7 @@ let game = function (value) {
         reset.addEventListener("click", () => {
             cNum = 0;
             pNum = 0;
+            rounds = 0;
             cScore.textContent = cNum;
             pScore.textContent = pNum;
             plrChoice.textContent = "ur choice";
