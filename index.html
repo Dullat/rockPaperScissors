@@ -1,12 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <div class="wrapper">
+        <header class="primary-header | flex">
+            <p class="logo">logo</p>
+            <nav>
+                <ul class="primary-navigation | flex">
+                    <li><a href="">Odin-project</a></li>
+                    <li><a href="">My social</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="game-section">
+            <h1>Rock Paper Scissors</h1>
+            <div class="score-section">
+                <div class="score-box">
+                    <span class="player-score">0</span>
+                    <p>Ur score</p>
+                    <div class="show-choice">
+                        <span class="show-choice-plr">ur choice</span>
+                    </div>
+                </div>
+                <div class="score-box">
+                    <span class="bot-score">0</span>
+                    <p>Bot score</p>
+                    <div class="show-choice">
+                        <span class="show-choice-bot">bot choice</span>
+                    </div>
+                </div>
+            </div>
+            <div class="result-section">
+                <span class="temp-result">see Result here</span>
+            </div>
+            <div class="choice-section">
+                <button class="choice btn" value="rock">Rock</button>
+                <button class="choice btn" value="paper">Paper</button>
+                <button class="choice btn" value="scissor">Scissor</button>
+                <div class="pop-up" visible="false">
+                    <span class="final-result"></span>
+                    <button class="reset-btn">Play again</button>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>this page is a part of odin project, follow me on social media</p>
+            <p style="color:red">copyright© 2023 dullat. All rights reserved.</p>
+        </footer>
+    </div>
     <script src="app.js"></script>
 </body>
+
 </html>
